@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_fafafa"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/sl_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_shzt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="待审核..."
+                android:textColor="@color/text_red" />
+
+
+            <View
+                style="@style/style_line_de"
+                android:layout_marginTop="15dp" />
+
+
+            <View
+                style="@style/style_line_ef_left"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/high_item"
+                android:background="@color/text_white"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    style="@style/common_text_item"
+                    android:text="网点名称：" />
+
+                <TextView
+                    android:id="@+id/tv_wdmc"
+                    style="@style/common_text_infor"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/style_line_ef_left"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/high_item"
+                android:background="@color/text_white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/common_text_item"
+                    android:text="网点类型：" />
+
+                <TextView
+                    android:id="@+id/tv_dw"
+                    style="@style/common_text_infor"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/style_line_ef_left"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/high_item"
+                android:background="@color/text_white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/common_text_item"
+                    android:text="联系人：" />
+
+                <TextView
+                    android:id="@+id/tv_lxr"
+                    style="@style/common_text_infor"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/style_line_ef_left"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="@color/text_white">
+
+                <TextView
+                    style="@style/common_text_item"
+                    android:layout_marginTop="16dp"
+                    android:text="地址：" />
+
+                <TextView
+                    android:id="@+id/tv_dizhi"
+                    style="@style/common_text_infor"
+                    android:layout_marginTop="16dp"
+                    android:lines="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/style_line_de" />
+
+            <View
+                style="@style/style_line_de"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/high_item"
+                android:background="@color/text_white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/common_text_item"
+                    android:text="营业执照：" />
+
+                <ImageView
+                    android:id="@+id/iv_yyzz"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="40dp"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+            <View style="@style/style_line_de" />
+
+            <View
+                style="@style/style_line_de"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/high_item"
+                android:background="@color/text_white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/common_text_item"
+                    android:text="推荐人：" />
+
+                <TextView
+
+                    android:id="@+id/tv_tjr"
+                    style="@style/common_text_infor"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/style_line_de" />
+
+
+            <Button
+                android:id="@+id/bt_skip"
+                style="@style/common_bt_long"
+                android:layout_marginTop="20dp"
+                android:text="跳转到修改界面"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</LinearLayout>

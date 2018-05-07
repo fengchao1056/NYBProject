@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_waitget"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="待取货"
+            android:textColor="@color/butten_green"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#c7c8cc" />
+
+        <Button
+            android:id="@+id/bt_alreadyget"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#F9F9F9"
+            android:text="已取货"
+            android:textColor="#c7c8cc"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="3dp">
+
+        <View
+            android:id="@+id/v_line_left"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/butten_green" />
+
+        <View
+            android:id="@+id/v_line_right"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#c7c8cc" />
+
+
+    </LinearLayout>
+
+    <!--<com.myzyb.appNYB.ui.view.PagerSlidingTabStrip-->
+    <!--android:id="@+id/fragment_tabs"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="48dip"-->
+    <!--android:background="@color/white" />-->
+
+    <!--<com.myzyb.appNYB.ui.view.MyViewPager-->
+    <!--android:id="@+id/fragment_viewpager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <FrameLayout
+        android:id="@+id/frgment_base"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+
+</LinearLayout>

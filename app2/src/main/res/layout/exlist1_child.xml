@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/bg_fafafa">
+
+    <TextView
+        android:id="@+id/tv_mingc_child"
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="超威12-DZM-200"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:text="数量(块) : "
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/iv_remove_child"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/submit_remove2"
+                android:enabled="true" />
+
+            <EditText
+                android:id="@+id/et_count_child"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ed_box"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColor="@color/ball_fd" />
+
+            <Button
+                android:id="@+id/iv_add_child"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/submit_add"
+                android:onClick="onClick" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

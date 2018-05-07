@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false" >
+    <solid android:color="@color/ball_fd" />
+    <padding
+        android:left="2dp"
+        android:top="1dp"
+        android:right="2dp"
+        android:bottom="1dp" />
+    <solid
+        android:color="@color/ball_fd" />
+    <size android:width="20dp"
+        android:height="20dp" />
+</shape>

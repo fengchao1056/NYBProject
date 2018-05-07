@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/imb_back"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="充值"
+            android:textColor="#262626"
+            android:textSize="18sp" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#cccccc" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="#dedede" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="金额(元)：    " />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入充值金额"
+            android:inputType="numberDecimal"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#dedede" />
+
+    <Button
+        android:id="@+id/bt_next"
+        style="@style/common_bt_long"
+        android:layout_marginTop="80dp"
+        android:text="下一步 "
+        android:textColor="@color/white" />
+
+</LinearLayout>

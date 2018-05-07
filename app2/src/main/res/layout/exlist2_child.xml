@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="@color/bg_fafafa">
+
+    <TextView
+        android:id="@+id/tv_pinpai_child2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:text="超威12-DZM-200"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="数量  (块) :  "
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_num_child2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="2" />
+
+</LinearLayout>

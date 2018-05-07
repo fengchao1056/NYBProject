@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.purchase.PurchaseActivity">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/title_back"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_main"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/mine" />
+                <EditText
+                 android:textColorHint="@color/hui"
+                    android:paddingLeft="10dp"
+                    android:textSize="10dp"
+                    android:paddingRight="8dp"
+                    android:drawableRight="@drawable/hint"
+                    android:id="@+id/et_hunk"
+                    android:background="@drawable/ed_white_shape"
+                    android:hint="在此处输入搜索内容"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp" />
+
+                <ImageView
+
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_purchase"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/purchase" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

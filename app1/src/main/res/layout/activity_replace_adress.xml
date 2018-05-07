@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="    地址选择" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_baidumapdw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/high_item"
+            android:background="@color/text_white"
+            android:onClick="onClick"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_dw"
+                style="@style/common_text_item"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:text="定位地址：" />
+
+
+            <TextView
+                android:id="@+id/tv_type_choose"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_dw"
+                android:clickable="false"
+                android:drawableLeft="@drawable/icon_gcoding"
+                android:gravity="center_vertical"
+                android:text="  点击选择"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/button_right" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/style_line_de"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/high_item"
+            android:background="@color/text_white">
+
+            <TextView
+                android:id="@+id/tv_xxdz"
+                style="@style/common_text_item"
+                android:layout_centerVertical="true"
+                android:text="详细地址：" />
+
+
+            <EditText
+                android:id="@+id/ed_xxdz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_xxdz"
+                android:background="@null"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:hint="  请输入详细地址"
+                android:onClick="onClick"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/button_right" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_get_rech"
+        style="@style/common_bt_long"
+        android:layout_marginTop="20dp"
+        android:text="修改地址" />
+
+
+</LinearLayout>

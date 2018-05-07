@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tv_phone_fgt"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:text="旧密码："
+
+            android:textColor="@color/text_323232"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_passwd"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_phone_fgt"
+            android:background="@null"
+            android:hint="请输入旧密码"
+            android:inputType="textPassword"
+            android:maxLength="8"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/line_c7c8" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_ycode_fgt"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:text="新密码："
+            android:textColor="@color/text_323232"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_sure_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_ycode_fgt"
+            android:background="@null"
+            android:hint="请输入新密码(6-8位) "
+            android:inputType="textPassword"
+            android:maxLength="8"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/line_c7c8" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_setpw_fgt"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:text="确认密码："
+            android:textColor="@color/text_323232"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_still_sure_pw"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_setpw_fgt"
+            android:background="@null"
+            android:hint="请再次输入新密码"
+            android:inputType="textPassword"
+            android:maxLength="8"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/line_c7c8" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_forget_pw_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:gravity="right"
+        android:onClick="onClick"
+        android:text="忘记密码?"
+        android:textColor="@color/text_green" />
+
+    <Button
+        android:id="@+id/bt_sub_imp"
+        style="@style/common_bt_long"
+        android:layout_marginTop="25dp"
+        android:text="重置" />
+
+
+</LinearLayout>

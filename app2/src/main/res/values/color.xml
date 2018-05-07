@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_back">#08cf4e</color>
+
+    <color name="white">#ffffff</color>
+    <color name="butten_green">#08cf4e</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_red">#f6350f</color>
+    <color name="money_red">#cf0808</color>
+    <color name="butten_blue">#51aaf6</color>
+    <color name="bg_fafafa">#fafafa</color>
+    <color name="line_de">#dedede</color>
+    <color name="line_cd">#cdcdcd</color>
+    <color name="line_ef">#efefef</color>
+    <color name="line_green">#6ad42b</color>
+    <color name="ball_fd">#fd6103</color>
+    <color name="line_c7c8">#C7C8CC</color>
+    <color name="hint_cl">#949494</color>
+    <color name="text_cacaca">#cacaca</color>
+    <color name="text_acacac">#acacac</color>
+    <color name="text_646464">#646464</color>
+    <color name="text_909090">#909090</color>
+    <color name="text_323232">#323232</color>
+    <color name="text_green">#08cf4e</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="background_tab_pressed">#08cf4e</color>
+    <!-- 上传图片添加的颜色 -->
+    <color name="none_color">#00000000</color>
+    <color name="plugin_camera_black">#000000</color>
+    <color name="albumback">#E1E0DE</color>
+    <color name="blue">#0000ff</color>
+    <!--蓝色 -->
+    <color name="black">#000000</color>
+    <!--黑色 -->
+    <color name="style_red">#ff4c41</color>
+    <color name="style_divider_color">#C9C7CD</color>
+
+
+    <color name="trans">#00000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <color name="color1">#F0F0F0</color>
+    <color name="color2">#FFFFFF</color>
+    <color name="color3">#B0B0B0</color>
+    <color name="color4">#666666</color>
+    <color name="color5">#57C5E8</color>
+    <color name="background">#FFFFFF</color>
+    <color name="split_line">#11112233</color>
+    <color name="text1">#59B29C</color>
+    <color name="text2">#333333</color>
+    <color name="transparent40">#66000000</color>
+</resources>

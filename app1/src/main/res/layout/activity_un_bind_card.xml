@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="请先解绑原银行卡再进行添加"
+        android:textColor="@color/text_green"
+        android:textSize="12dp" />
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#dedede" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="银行卡：    " />
+
+        <TextView
+            android:id="@+id/tv_bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+
+        android:background="#dedede" />
+
+    <Button
+        android:id="@+id/bt_submit"
+        style="@style/common_bt_long"
+        android:layout_marginTop="60dp"
+        android:enabled="true"
+        android:text="解绑"
+        android:textSize="18dp" />
+
+</LinearLayout>

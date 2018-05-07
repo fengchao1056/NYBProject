@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@color/bg_fafafa"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="中国+86"
+            android:textColor="@color/text_green"
+            android:textSize="19sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:background="@color/line_cd" />
+
+
+        <EditText
+            android:id="@+id/et_phone_reg"
+            style="@style/style_et_reg"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:hint="手机号码"
+            android:maxLength="11"
+            android:minEms="11"
+            android:phoneNumber="true"
+            android:textColorHint="@color/line_de"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <View
+        style="@style/style_line_cd"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+
+    <EditText
+        android:id="@+id/et_pass_reg"
+        style="@style/style_et_reg"
+        android:hint="设置密码(6-8位)"
+        android:maxLength="8"
+        android:minEms="6"
+        android:password="true"
+        android:textColorHint="@color/line_de"
+        android:textSize="19sp" />
+
+    <View
+        style="@style/style_line_cd"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <Button
+        android:id="@+id/bt_reg_reg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butten"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/selector_butten_long"
+        android:enabled="false"
+        android:onClick="onClick"
+        android:text="@string/botten_reg"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="17dp"
+        android:text="使用真实的手机号，以便正常交易"
+        android:textColor="@color/text_646464"
+        android:textSize="15dp" />
+
+</LinearLayout>

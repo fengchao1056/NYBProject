@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_photo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="上传营业执照" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="18dp">
+
+        <TextView
+            android:id="@+id/tv_photograph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableTop="@drawable/photo_graph"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="拍一张吧" />
+
+        <TextView
+            android:id="@+id/tv_localupload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:drawableTop="@drawable/photo_localget"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="本地上传" />
+
+
+    </RelativeLayout>
+
+    <View style="@style/style_line_de" />
+
+
+    <Button
+        android:id="@+id/bt_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:onClick="onClick"
+        android:text="取消" />
+
+
+</LinearLayout>
+
+
+

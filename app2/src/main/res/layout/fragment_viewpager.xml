@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/title_back"
+        android:layout_height="45dp">
+    <RadioGroup
+        android:id="@+id/title_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/bt_left_list"
+            android:layout_width="60dp"
+            android:gravity="center"
+            android:button="@null"
+            android:checked="true"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_left_selector"
+            android:text="抢单"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/bt_right_list"
+            android:layout_width="60dp"
+            android:button="@null"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@drawable/btn_right_selector"
+            android:text="待取"
+            android:textSize="12dp" />
+    </RadioGroup>
+        <TextView
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:text="地图"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_map"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <com.myzyb2.appNYB2.ui.view.MyViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.myzyb2.appNYB2.ui.view.MyViewPager>
+
+</LinearLayout>

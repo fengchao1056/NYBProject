@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@color/bg_fafafa"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="中国+86"
+            android:textColor="@color/text_green"
+            android:textSize="19sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:background="@color/line_cd" />
+
+
+        <EditText
+            android:id="@+id/et_phone_log"
+            style="@style/style_et_reg"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:hint="手机号码"
+            android:maxLength="11"
+            android:minEms="11"
+            android:phoneNumber="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/line_de"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <View
+        style="@style/style_line_cd"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <EditText
+        android:id="@+id/et_pass_log"
+        style="@style/style_et_reg"
+        android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:hint="输入密码(6-8位)"
+        android:maxLength="8"
+        android:minEms="6"
+        android:password="true"
+        android:textColorHint="@color/line_de"
+        android:textSize="19sp" />
+
+    <View
+        style="@style/style_line_cd"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <Button
+        android:id="@+id/bt_login_log"
+        style="@style/common_bt_long"
+        android:layout_marginTop="30dp"
+        android:enabled="false"
+        android:text="登录" />
+
+    <TextView
+        android:id="@+id/tv_forget_pw_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="忘记密码?"
+        android:textColor="@color/text_green" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:text="版本：V3.1"
+            android:textColor="#666666" />
+    </LinearLayout>
+
+</LinearLayout>

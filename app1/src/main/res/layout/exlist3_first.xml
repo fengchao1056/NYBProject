@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp"
+    android:orientation="horizontal"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+
+        android:text="订单编号："
+        android:textColor="#2e2e2e"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_goodnum_flist"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="#2e2e2e"
+        android:textSize="14dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_time_flist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center|right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/iv_uporown_flist"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textColor="#606060"
+            android:textSize="9dp" />
+
+
+        <ImageView
+            android:id="@+id/iv_uporown_flist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/down" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

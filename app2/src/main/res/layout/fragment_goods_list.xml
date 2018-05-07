@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.myzyb2.appNYB2.ui.view.springview.widget.SpringView
+        android:layout_width="match_parent"
+        android:id="@+id/mSpringView"
+        android:layout_height="match_parent">
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/lv_carshop"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:divider="#e6e6e6"
+            android:dividerHeight="1dp"
+            android:visibility="visible"/>
+
+    </com.myzyb2.appNYB2.ui.view.springview.widget.SpringView>
+
+</FrameLayout>

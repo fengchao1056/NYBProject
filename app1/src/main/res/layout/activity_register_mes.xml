@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_fafafa"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="11dp"
+                android:singleLine="true"
+                android:text="请完善下面的个人信息完成注册"
+                android:textColor="@color/text_646464"
+                android:textSize="14dp" />
+
+            <View style="@style/style_line_de" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/high_item"
+                android:background="@color/text_white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/common_text_item"
+                    android:text="网点名称：" />
+
+                <EditText
+                    android:id="@+id/et_wdmc"
+                    style="@style/style_et_mes"
+                    android:hint="请填写网点名称"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/style_line_ef_left"
+                android:layout_marginLeft="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/high_item"
+                android:background="@color/text_white">
+
+                <TextView
+                    android:id="@+id/tv_dw"
+                    style="@style/common_text_item"
+                    android:layout_centerVertical="true"
+                    android:text="网点类型：" />
+
+
+                <TextView
+                    android:id="@+id/tv_type_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_dw"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:text="请选择网点类型"
+                    android:textColor="@color/text_646464"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/down" />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/style_line_ef_left"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/high_item"
+                android:background="@color/text_white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/common_text_item"
+                    android:text="联系人：" />
+
+                <EditText
+                    android:id="@+id/et_lxr"
+                    style="@style/style_et_mes"
+                    android:hint="请填写联系人"
+                    android:maxLength="16"
+                    android:singleLine="true"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/style_line_de" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/high_item"
+                android:background="@color/text_white">
+
+                <TextView
+                    android:id="@+id/tv_dizhi"
+                    style="@style/common_text_item"
+                    android:layout_centerVertical="true"
+                    android:text="地址：" />
+
+                <TextView
+                    android:id="@+id/tv_choose_adress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_dizhi"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:text="请选择地址"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/down"
+
+                    />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/style_line_ef_left"
+                android:layout_marginLeft="20dp" />
+
+
+            <View
+                style="@style/style_line_ef_left"
+                android:layout_marginLeft="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/high_item"
+                android:background="@color/text_white">
+
+                <EditText
+                    android:id="@+id/ed_xxdz"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="115dp"
+                    android:background="@null"
+                    android:hint="请输入详细地址"
+                    android:singleLine="true"
+                    android:textColor="@color/text_323232"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+            <View style="@style/style_line_de" />
+
+
+            <View
+                style="@style/style_line_de"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_loadpicture"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/high_item"
+                android:background="@color/text_white"
+                android:clickable="true"
+                android:onClick="onClick">
+
+
+                <TextView
+                    android:id="@+id/tv_zp"
+                    style="@style/common_text_item"
+                    android:layout_centerVertical="true"
+                    android:text="上传营业执照：" />
+
+                <ImageView
+                    android:id="@+id/iv_photo_yyzz"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@+id/tv_zp"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button_right"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View style="@style/style_line_de" />
+
+            <View
+                style="@style/style_line_de"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/high_item"
+                android:background="@color/text_white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/common_text_item"
+                    android:text="推荐人：" />
+
+                <EditText
+                    android:id="@+id/ed_tjrid"
+                    style="@style/style_et_mes"
+                    android:hint="推荐人网点ID（选填）"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:singleLine="true"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View style="@style/style_line_de" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <CheckBox
+                    android:id="@+id/cb_agree_mse"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/checkable_check_box"
+                    android:button="@null"
+                    android:layout_alignBaseline="@+id/tongyi"
+                    android:layout_alignBottom="@+id/tongyi"
+                    android:layout_toLeftOf="@+id/tongyi"
+                    android:layout_toStartOf="@+id/tongyi" />
+
+                <TextView
+                    android:id="@+id/tongyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_xytk_mes"
+                    android:text="同意"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tv_xytk_mes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="《协议条款》"
+                    android:textColor="@color/butten_green" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/bt_sum_mse"
+                style="@style/common_bt_long"
+                android:layout_marginTop="5dp"
+                android:onClick="onClick"
+                android:text="提交"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

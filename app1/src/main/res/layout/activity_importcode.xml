@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+
+    <TextView
+        android:layout_marginTop="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:singleLine="true"
+        android:text="本次注册需要短信验证,已发送验证码至"
+        android:textSize="14dp"
+        android:textColor="@color/text_646464"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="22dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_86"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="+86"
+            android:textColor="@color/text_green"
+            android:textSize="18dp" />
+       <TextView
+           android:layout_centerVertical="true"
+           android:layout_toRightOf="@+id/tv_86"
+           android:id="@+id/tv_phone_import"
+           android:layout_marginLeft="20dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="1851234567"
+           android:textColor="@color/text_cacaca"
+           android:textSize="16dp"/>
+        <Button
+            android:id="@+id/bt_time_imp"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_butten"
+            android:text="获取验证码"
+            android:textSize="14dp"
+            android:onClick="onClick"
+            android:enabled="false"
+            android:textColor="@color/text_white"/>
+    </RelativeLayout>
+
+       <View
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+           android:layout_marginTop="6dp"
+           style="@style/style_line_de" />
+
+        <EditText
+
+            android:id="@+id/et_code"
+            style="@style/style_et_reg"
+            android:inputType="number"
+            android:maxLength="8"
+            android:hint="输入验证码"
+            android:textColorHint="@color/text_cacaca"/>
+
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        style="@style/style_line_de" />
+        <Button
+
+            android:layout_marginTop="25dp"
+            android:id="@+id/bt_sub_imp"
+           style="@style/common_bt_long"
+            android:text="提交"/>
+
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/exit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_blowcar">
+
+        <ImageView
+            android:id="@+id/iv_car_buycar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sanjiao"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/submit_car" />
+
+        <TextView
+            android:id="@+id/tv_count_buycar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sanjiao"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="46dp"
+            android:background="@drawable/ball"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="10dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/sanjiao"
+            android:layout_width="25dp"
+            android:layout_height="14dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="23dp"
+            android:background="@drawable/triangle" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_blowcar"
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_fafafa"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="49dp">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/text_323232"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/bt_clear"
+                android:layout_width="70dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                android:text="清空回收车"
+                android:textSize="14dp"
+                android:textColor="@color/text_646464" />
+
+        </RelativeLayout>
+
+        <View style="@style/style_line_de" />
+
+        <ListView
+            android:id="@+id/lsv_buycar"
+            android:layout_width="fill_parent"
+            android:layout_height="270dp"
+            android:descendantFocusability="beforeDescendants"
+            android:divider="@drawable/list_item_divider"
+            android:dividerHeight="1dp"></ListView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="@color/white">
+
+            <View style="@style/style_line_de" />
+
+            <TextView
+                android:id="@+id/zongji_buycar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/fl_famt"
+                android:text="总价："
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/tv_zongjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/zongji_buycar"
+                android:text=""
+                android:textColor="@color/ball_fd" />
+
+            <TextView
+                android:id="@+id/jifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zongji_buycar"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/fl_famt"
+                android:text="获得积分："
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_jifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zongji_buycar"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/jifen"
+                android:text=""
+                android:textColor="@color/ball_fd" />
+
+            <Button
+                android:id="@+id/bt_submit_buycar"
+                android:layout_width="80dp"
+                android:layout_height="49dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="7.5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/selector_butten"
+                android:enabled="false"
+                android:onClick="onClick"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_back">#08cf4e</color>
+    <color name="white">#ffffff</color>
+    <color name="butten_green">#08cf4e</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_red">#f6350f</color>
+    <color name="butten_blue">#51aaf6</color>
+    <color name="money_red">#cf0808</color>
+    <color name="bg_fafafa">#fafafa</color>
+    <color name="line_de">#dedede</color>
+    <color name="line_cd">#cdcdcd</color>
+    <color name="line_ef">#efefef</color>
+    <color name="line_green">#6ad42b</color>
+    <color name="ball_fd">#fd6103</color>
+    <color name="line_c7c8">#C7C8CC</color>
+    <color name="hint_cl">#949494</color>
+    <color name="text_cacaca">#cacaca</color>
+    <color name="text_acacac">#acacac</color>
+    <color name="text_646464">#646464</color>
+    <color name="text_909090">#909090</color>
+    <color name="text_323232">#323232</color>
+    <color name="text_green">#08cf4e</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="background_tab_pressed">#08cf4e</color>
+    <!-- 上传图片添加的颜色 -->
+    <color name="none_color">#00000000</color>
+    <color name="plugin_camera_black">#000000</color>
+    <color name="albumback">#E1E0DE</color>
+    <color name="blue">#0000ff</color>
+    <!--蓝色 -->
+    <color name="black">#000000</color>
+    <!--黑色 -->
+    <color name="style_red">#ff4c41</color>
+    <color name="style_divider_color">#C9C7CD</color>
+
+    <!-- IOS7风格对话框  -->
+    <color name="trans">#00000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <!-- 暗宝石绿 -->
+    <color name="middleblue">#5f9cf9</color>
+    <!-- 蓟色 -->
+    <color name="lightgray">#eef2f5</color>
+    <color name="transparent">#00000000</color>
+    <!--color-->
+    <color name="mainColor">#51ac33</color>
+    <color name="hui">#666666</color>
+</resources>

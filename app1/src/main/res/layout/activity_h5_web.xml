@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/actionsheet_red">
+
+
+
+    <WebView
+        android:id="@+id/app_mWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/blue"
+        />
+
+    <!--<include layout="@layout/sobot_layout_net_error"-->
+        <!--android:id="@+id/sobot_rl_net_error" />-->
+</LinearLayout>

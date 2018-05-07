@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <Button
+            android:id="@+id/bt_left"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/today_white"
+            android:text="今日订单"
+            android:textColor="@color/text_green" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/bt_center"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#ebebeb"
+            android:text="最近三天"
+            android:textColor="#2e2e2e" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/bt_right"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/histoy_gray"
+            android:text="历史订单"
+            android:textColor="#2e2e2e" />
+    </LinearLayout>
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshExpandableListView
+        android:id="@+id/exlist_inpager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:childDivider="@drawable/common_pading_line"
+        android:divider="@color/line_ef"
+        android:dividerHeight="1dp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_order_history"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@drawable/date"
+                    android:gravity="center_vertical"
+                    android:text="  开始日期" />
+
+                <EditText
+                    android:id="@+id/tv_start_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="26dp"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:inputType="none"
+                    android:text="请选择开始日期"
+                    android:textColor="#bbbbbb"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_de" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@drawable/date"
+                    android:gravity="center_vertical"
+                    android:text="  结束日期" />
+
+                <EditText
+                    android:id="@+id/tv_end_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="26dp"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:inputType="none"
+                    android:text="请选择结束日期"
+                    android:textColor="#bbbbbb"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_query"
+            style="@style/common_bt_long"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="60dp"
+            android:enabled="true"
+            android:text="查询" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/layout_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_phone_fgt"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:text="手机号"
+            android:maxLength="11"
+            android:textColor="@color/text_323232"
+            android:textSize="16dp" />
+        <EditText
+            android:id="@+id/et_moblie"
+            android:layout_toRightOf="@+id/tv_phone_fgt"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="输入手机号"
+            android:maxLength="11"
+            android:textSize="16dp"
+            android:inputType="phone"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            />
+        <Button
+            android:id="@+id/bt_time_imp"
+            android:layout_alignParentRight="true"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/selector_butten_long"
+            android:text="获取验证码"
+            android:textSize="14dp"
+            android:onClick="onClick"
+            android:enabled="false"
+            android:textColor="@color/text_white"
+            />
+        <View
+            android:layout_height="1dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background = "@color/line_c7c8"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_ycode_fgt"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:text="验证码："
+            android:textColor="@color/text_323232"
+            android:textSize="16dp" />
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_toRightOf="@+id/tv_ycode_fgt"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="输入验证码"
+            android:textSize="16dp"
+            android:inputType="number"
+            android:maxLength="8"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            />
+        <View
+            android:layout_height="1dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background = "@color/line_c7c8"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_setpw_fgt"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:text="设置密码："
+            android:maxLength="8"
+            android:textColor="@color/text_323232"
+            android:textSize="16dp" />
+        <EditText
+            android:id="@+id/et_passwd"
+            android:layout_toRightOf="@+id/tv_setpw_fgt"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="输入密码"
+            android:maxLength="8"
+            android:inputType="textPassword"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            />
+        <View
+            android:layout_height="1dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background = "@color/line_c7c8"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="25dp"
+        android:id="@+id/bt_sub_imp"
+        style="@style/common_bt_long"
+        android:text="重置"
+        />
+
+
+</LinearLayout>
